@@ -10,24 +10,18 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-            Console.Write("Input a number: ");
-            int num = Convert.ToInt32(Console.ReadLine());
+            char letter1, letter2, letter3;
 
-            Console.Write("Input the desired width: ");
-            int width = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input letter1: ");
+            letter1 = Convert.ToChar(Console.ReadLine());
+            Console.Write("Input letter2: ");
+            letter2 = Convert.ToChar(Console.ReadLine());
+            Console.Write("Input letter3: ");
+            letter3 = Convert.ToChar(Console.ReadLine());
 
-            int height = width;
-            for (int row = 0; row < height; row++)
-            {
-                for (int column = 0; column < width; column++)
-                {
-                    Console.Write(num);
-                }
-
-                Console.WriteLine();
-                width--;
-            }
+            Console.WriteLine("{0} {1} {2}", letter3, letter2, letter1);
             Console.ReadKey();
+
         }
     }
 }
